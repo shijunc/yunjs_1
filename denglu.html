@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>登录</title>
+    <link rel="stylesheet" href="./denglu.css">
+</head>
+<body>
+    <div class="div">
+        <div class="div1">
+            <div class="bg">
+                <form action="#" method="post">
+                    <p>				
+                        Username：<input type="text" value="2006030408" /><br>	
+                    </p>
+                    <p>				
+                        Password：<input type="password" value="2006030408" /><br>
+                    </p>
+                    <p>
+                        <a><button type="button">Login</button></a>
+                    </p>
+                </form>
+            </div>
+        </div>
+    </div>
+    <script>
+        var btn = document.querySelector('a');
+        btn.onclick = function(){
+            var ipt = document.querySelectorAll('input');
+            if(ipt[0].value=="2006030408"&&ipt[1].value=="2006030408"){
+                alert("登录成功")
+            }else{
+                alert("账号或密码有误");
+                }
+            }
+    </script>
+</body>
+</html>
